@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Streetscape</title>
+		<style>
+			html {
+				overflow-x: hidden;
+				overflow-y: hidden;
+				margin: 0px;
+				padding: 0px;
+			}
+			body {
+				margin: 0px;
+				padding: 0px;
+				background-color: #CCC;
+			}
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #333;
+			}
+			.blank {
+				background-color: #333;
+				border: 0px;
+			}
+			button {
+				float: left;
+				text-align: center;
+				vertical-align: text-bottom;
+				border: 1px solid #444;
+				margin: 2px;
+				color: #000;
+				width: 120px;
+				height: 60px;
+				background-color: #aaa;
+				font: 18px Helvetica, san-serif;
+			}
+			li:hover {
+				background-color: #555;
+			}
+		</style>
+		<script type="text/javascript" src="streetscape.js"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	</head>
+	<body onload="on_body_load ();">
+		<ul>
+			<button id="streetscape_width" style="width:180px;"><span style="line-height: 50px;"></span>Width:</button>
+			<button id="save_as_button"><span style="line-height: 50px;"></span>Save</button>
+		</ul>
+		<div style="overflow: scroll; width=100%;">
+			<canvas style="height: 450px;" height="450" id="streetscape_canvas">
+				HTML5 Canvas feature must be supported by your browser to use this webpage. Please use a different standards compliant browser.
+			</canvas>
+		</div>
+		<div style="width=100%; overflow: scroll;">
+				<button id="delete_button"><span style="line-height: 50px;"></span>Delete</button>
+				<button class="blank"></button>
+				<button class="blank"></button>
+				<button id="narrow_button"><span style="line-height: 50px;"></span>Narrow</button>
+				<button class="blank"></button>
+				<button id="widen_button"><span style="line-height: 50px;"></span>Widen</button>
+				<button class="blank"></button>
+				<button class="blank"></button>
+				<button id="new_button"><span style="line-height: 50px;"></span>New</button>
+
+				<button class="blank"></button>
+				<button id="make_grass"><span style="line-height: 50px;"></span>Grass</button>
+				<button id="make_tree"><span style="line-height: 50px;"></span>Tree</button>
+				<button class="blank"></button>
+				<button id="make_cycleway"><span style="line-height: 50px;"></span>Cycleway</button>
+				<button id="make_cyclepark"><span style="line-height: 50px;"></span>Parking</button>
+				<button id="make_refuge"><span style="line-height: 50px;"></span>Refuge</button>
+				<button id="make_footway"><span style="line-height: 50px;"></span>Footway</button>
+				<button class="blank"></button>
+				<button id="make_raised"><span style="line-height: 50px;"></span>Raised</button>
+
+				<button class="blank"></button>
+				<button id="make_bus"><span style="line-height: 50px;"></span>Bus</button>
+				<button id="make_turn"><span style="line-height: 50px;"></span>Turn</button>
+				<button id="make_traffic"><span style="line-height: 50px;"></span>Traffic</button>
+				<button class="blank"></button>
+				<button id="make_parking"><span style="line-height: 50px;"></span>Parking</button>
+				<button id="make_up"><span style="line-height: 50px;"></span>Up</button>
+				<button id="make_down"><span style="line-height: 50px;"></span>Down</button>
+				<button id="make_left"><span style="line-height: 50px;"></span>Left</button>
+				<button id="make_right"><span style="line-height: 50px;"></span>Right</button>
+		</div>
+	</body>
+</html>
